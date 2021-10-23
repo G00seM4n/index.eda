@@ -34,6 +34,15 @@ body {
   border: none;
   width: 100%;
   padding: 13px 59px 13px 20px;
+  border: transparent 2px solid;
+  transition: .2s;
+  border-radius: 10px;
+}
+
+.search-input:focus-visible {
+  outline: transparent;
+  border: #EC762A 2px solid;
+  border-radius: 10px;
 }
 
 .search-btn {
@@ -58,6 +67,10 @@ body {
   display: block;
   text-decoration: none;
   color: #000;
+}
+
+.login:hover {
+  
 }
 
 .shopping-cart {
