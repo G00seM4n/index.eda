@@ -69,10 +69,6 @@ body {
   color: #000;
 }
 
-.login:hover {
-  
-}
-
 .shopping-cart {
   background: #f66a15;
   border-radius: 50%;
@@ -130,8 +126,20 @@ body {
   background-size: cover;
 }
 
+.slide-spring {
+  background-image: url(../img/slider/slide-bg-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-vitamine {
+  background-image: url(../img/slider/slide-bg-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .slide-content {
-  max-width: 400px;
+  max-width: 403px;
   position: relative;
 }
 
@@ -261,4 +269,30 @@ body {
   height: 100%;
   z-index: -2;
   object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #F66A15 !important;
+  background: rgba(235, 235, 235, 0.7);
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 24px !important;
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 45px !important;
+  bottom: 40px !important;
+  left: unset !important;
+  top: unset !important;
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  right: 107px !important;
+  bottom: 40px !important;
+  left: unset !important;
+  top: unset !important;
 }
