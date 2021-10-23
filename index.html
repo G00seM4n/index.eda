@@ -13,7 +13,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/tiny-slider/tiny-slider.css">
+    <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
     <title>Индекс еда</title>
 </head>
 <body>
@@ -35,16 +35,58 @@
             <span class="shopping-counter">13</span>
         </a>
     </header>
-    <main>
-        <div class="my-slider">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+    <main class="container">
+        <div class="slider">
+            <div class="slide slide-text-light slide-summer">
+                <div class="slide-content">
+                    <h2 class="slide-title">Неделя летних овощей</h2>
+                    <p class="slide-text">Специальная овощная корзина. Новые продукты, специальные цены, скидки!</p>
+                    <a class="button button-primary" href="#">Заказать со скидкой</a>
+                </div>
+            </div>
+        </div>
+        <div class="promo">
+            <section class="card card-text-light sweet-bucket">
+                <img class="card-img" src="/img/promo/card-bg-1.png" alt="Сладкая корзина">
+                <div class="card-header">
+                    <h3 class="card-title">Сладкая корзина</h3>
+                    <p class="card-description">Произвольный выбор десертов по Вашему желанию.</p>
+                </div>
+                <div class="card-footer">
+                    <strong class="card-price">ОТ 1 300 ₽</strong>
+                    <span class="card-delivery">стоимость доставки до 200 ₽</span>
+                    <a class="button button-default" href="#">Собрать корзину</a>
+                </div>
+            </section>
+            <section class="card card-text-light sweet-bucket">
+                <img class="card-img" src="/img/promo/card-bg-2.png" alt="Сладкая корзина">
+                <div class="card-header">
+                    <h3 class="card-title">Минимум усилий</h3>
+                    <p class="card-description">Произвольный выбор десертов по Вашему желанию.</p>
+                </div>
+                <div class="card-footer">
+                    <strong class="card-price">ОТ 700 ₽</strong>
+                    <span class="card-delivery">стоимость доставки до 200 ₽</span>
+                    <a class="button button-default" href="#">Собрать корзину</a>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
 
     </footer>
-    <script src="js/tiny-slider/tiny-slider.js"></script>
+    <!-- скрипты -->
+    <script src="js/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
