@@ -8,7 +8,8 @@ body {
 
 .container {
   max-width: 1214px;
-  padding: 0 10px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
   margin: 0 auto;
 }
 
@@ -168,6 +169,7 @@ body {
   line-height: 23px;
   transition: .2s;
   border: transparent 2px solid;
+  cursor: pointer;
 }
 
 .button-default {
@@ -194,9 +196,12 @@ body {
 }
 
 .promo {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 75px;
   display: flex;
   justify-content: space-between;
+  margin: -25px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -205,12 +210,12 @@ body {
   position: relative;
   padding: 32px;
   max-width: 570px;
-  width: 100%;
+  flex: 50%;
   min-height: 380px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin: 25px;
 }
 
 .card::before {
@@ -300,4 +305,245 @@ body {
 
 .swiper-button-prev:hover, .swiper-button-next:hover {
   border: 1px solid #000 !important;
+}
+
+.delivery-week {
+  padding-bottom: 100px;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.delivery-card {
+  width: 275px;
+  height: 182px;
+  overflow: hidden;
+  border-radius: 18px;
+  position: relative;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.delivery-card:hover .delivery-tag {
+  
+}
+
+.delivery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.delivery-tag {
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #fff;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+.tag-health {
+  background: #D0FD89;
+  color: #49494F;
+}
+
+.tag-veg {
+  background: #AEBC41;
+}
+
+.tag-meat {
+  background: #B86B78;
+}
+
+.tag-bird {
+  background: #D68334;
+}
+
+.tag-fish {
+  background: #CD6255;
+}
+
+.tag-baby {
+  background: #FFFDBF;
+  color: #49494F;
+}
+
+.tag-parents {
+  background: #F6FDC8;
+  color: #49494F;
+}
+
+.tag-festive {
+  background: #FEF7FE;
+  color: #49494F;
+}
+
+.section-gray {
+  background: #F6F6F6;
+}
+
+.category {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: space-between;
+  margin: -19px;
+}
+
+.tabs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 62px;
+}
+
+.tab-item {
+  margin-right: 58px;
+}
+
+.tab-link.active {
+  color: #F37321;
+}
+
+.tab-link {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #49494F;
+  text-decoration: none;
+}
+
+.tab-card {
+  max-width: 270px;
+  width: 100%;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 19px;
+}
+
+.tab-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.tab-card-content {
+  padding: 23px;
+}
+
+.tab-title {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 13px;
+}
+
+.tab-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #B9B9BE;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.tab-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab-price {
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4B4B51;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tab-weight {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #AAAAB1;
+}
+
+.button-outline {
+  background-color: transparent;
+  border: 2px solid #F37321;
+  border-radius: 33px;
+  padding: 15px 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F37321;
+}
+
+.button-center {
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+  max-width: 315px;
+  width: 100%;
+}
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #F6F6F6;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 50px;
+}
+
+.footer-link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  color: #000000;
+  margin-right: 50px;
+}
+
+.social-links {
+  margin-left: auto;
+  display: flex;
+}
+
+.social-link {
+  background: #C4C4C4;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
 }
